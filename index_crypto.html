@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Анализ объемов рынка - горизонтальный и вертикальный объем</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="forex объемы, индикатор объема свечи forex">
+    <meta name="description" content="Вертикальный и горизонтальный объем - Формирование рынка определяется тремя факторами – объемом, ценой и временем. Ежедневно внутри рынка развивается определенная область стоимости в соответствии с законом равновесия, который предполагает определенное количество продавцов и покупателей.">
+    <META NAME="AUTHOR" CONTENT="Бывалый Трейдер">
+    <META name="copyright" content="© 2017 Бывалый Трейдер">
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/styleshi.css">
+
+</head>
+
+<body>
+    <canvas id="valx"></canvas>
+    <div class="divinp">
+        <div class="select selectdiv">
+            <div id="pair" val="CRY/IDX" class="sel"><img class="imgsel" src="img/Binomo.png" width="18px" height="18px" />CRYPTO
+                IDX</div>
+            <div class="divscrol">
+                <div title="CRYPTO IDX" val="CRY/IDX" id="CRY_IDX" data="Binomo" class="sel sels"><img class="imgsel"
+                        src="img/Binomo.png" width="18px" height="18px" />CRYPTO IDX</div>
+            </div>
+        </div>
+        <select id="size" class="select">
+            <option value="15" id="15">15c.</option>
+            <option value="60" id="60">M1</option>
+            <option value="180" id="180">M3</option>
+            <option value="300" id="300" selected>M5</option>
+            <option value="600" id="600">M10</option>
+            <option value="900" id="900">M15</option>
+            <option value="1800" id="1800">M30</option>
+            <option value="3600" id="3600">H1</option>
+        </select>
+        <input id="period" value="36" placeholder="Период" class="select" />
+    </div>
+    <div class="preload"></div>
+    <script src="js/javas_cr.js"></script>
+</body>
+
+</html>
